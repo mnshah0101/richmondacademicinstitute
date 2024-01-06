@@ -28,6 +28,11 @@ app.get('/contact', async function(req, res) {
 }
 );
 
+app.get('/tutoring', async function(req, res) {
+  res.render('tutoring/math');
+}
+);
+
 app.get('/tutoring/:type', async function(req, res) {
   let type = req.params.type;
   if(type == 'math'){
