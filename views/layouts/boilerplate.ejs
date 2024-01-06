@@ -10,27 +10,42 @@
     <meta property="og:title" content="Richmond Academic Institute" />
     <meta property="og:description"
         content="A premier education center at Northside, committed to making Mathematics easy and SAT/ACT prep streamlined." />
-    <meta property="og:image" content="img/slider/benesh.jpeg" />
+    <meta property="og:image" content="/img/slider/benesh.jpeg" />
     <meta property="og:url" content="https://www.rvarai.com" />
 
     <!-- Place favicon.ico in the root directory -->
     <link rel="shortcut icon" type="image/x-icon" href="/img/logo/rai.jpeg">
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/meanmenu.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/owl-carousel.css">
-    <link rel="stylesheet" href="css/swiper-bundle.css">
-    <link rel="stylesheet" href="css/backtotop.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/font-awesome-pro.css">
-    <link rel="stylesheet" href="css/spacing.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/meanmenu.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/owl-carousel.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.css">
+    <link rel="stylesheet" href="/css/backtotop.css">
+    <link rel="stylesheet" href="/css/magnific-popup.css">
+    <link rel="stylesheet" href="/css/nice-select.css">
+    <link rel="stylesheet" href="/css/font-awesome-pro.css">
+    <link rel="stylesheet" href="/css/spacing.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <style>
+        .image-center {
+            text-align: center;
+            margin-top: 0;
+        }
+    </style>
     <%- include('../partials/header') %>
 
     <%-body%>
@@ -46,22 +61,22 @@
     <!-- footer area end -->
 
     <!-- JS here -->
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/waypoints.js"></script>
-    <script src="js/bootstrap-bundle.js"></script>
-    <script src="js/meanmenu.js"></script>
-    <script src="js/swiper-bundle.js"></script>
-    <script src="js/owl-carousel.js"></script>
-    <script src="js/magnific-popup.js"></script>
-    <script src="js/parallax.js"></script>
-    <script src="js/backtotop.js"></script>
-    <script src="js/nice-select.js"></script>
-    <script src="js/counterup.js"></script>
-    <script src="js/wow.js"></script>
-    <script src="js/isotope-pkgd.js"></script>
-    <script src="js/imagesloaded-pkgd.js"></script>
-    <script src="js/ajax-form.js"></script>
-    <script src="js/main.js"></script>
+    <script src="/js/vendor/jquery.js"></script>
+    <script src="/js/vendor/waypoints.js"></script>
+    <script src="/js/bootstrap-bundle.js"></script>
+    <script src="/js/meanmenu.js"></script>
+    <script src="/js/swiper-bundle.js"></script>
+    <script src="/js/owl-carousel.js"></script>
+    <script src="/js/magnific-popup.js"></script>
+    <script src="/js/parallax.js"></script>
+    <script src="/js/backtotop.js"></script>
+    <script src="/js/nice-select.js"></script>
+    <script src="/js/counterup.js"></script>
+    <script src="/js/wow.js"></script>
+    <script src="/js/isotope-pkgd.js"></script>
+    <script src="/js/imagesloaded-pkgd.js"></script>
+    <script src="/js/ajax-form.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

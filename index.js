@@ -13,37 +13,53 @@ app.set('view engine', 'ejs');
 // setting static files location
 app.use(express.static(path.join(__dirname, 'assets')));
 
-app.get('/about', function(req, res) {
+app.get('/about', async function(req, res) {
   res.render('about');
 }
+
 );
-app.get('/reviews', function(req, res) {
+app.get('/reviews', async function(req, res) {
   res.render('review');
 }
 );
 
-app.get('/contact', function(req, res) {
+app.get('/contact', async function(req, res) {
   res.render('contact');
 }
 );
 
-app.get('/', function(req, res) {
-  res.render('home');
-});
+app.get('/tutoring/:type', async function(req, res) {
+  let type = req.params.type;
+  if(type == 'math'){
+    return res.render('tutoring/math');
+  }
+  if(type == 'sat'){
+    return res.render('tutoring/sat');
+  }
+  else{
+    return res.render('error');
+  }
 
-
-//if any other route is requested, render 404
-app.get('*', function(req, res) {
-  res.render('404');
 }
 );
 
-
-
-app.use(function(req, res, next) {
-  res.status(404);
-  res.render('404');
+app.get('/', async function(req, res) {
+  res.render('home');
 });
+
+app.all('*', async (req, res, next) => {
+    res.render('error')
+})
+
+
+
+
+
+
+
+
+
+
 
 
 
